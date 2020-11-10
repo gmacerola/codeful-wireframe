@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="newNote.css" />
+    <title>New Note Page</title>
+  </head>
+  <body>
+    <nav role="navigation">
+      <a href="/">Home</a>
+    </nav>
+    <main role="main">
+      <header>
+        <h1>New Note</h1>
+      </header>
+      <section>
+        <form id="newNote">
+          <section class="form-section overview-section">
+            <label for="noteTitle">Note Title</label>
+            <input type="text" name="noteTitle" placeholder="Title" required />
+          </section>
+          <section class="form-section overview-section">
+            <label for="note">Note</label>
+            <textarea name="note" rows="15" required></textarea>
+          </section>
+          <section class="form-section note-type-section">
+            <h2>Select Folder</h2>
+
+            <input
+              type="radio"
+              name="folder"
+              id="folderHtml"
+              value="0"
+              class="folder-type-radio"
+              checked
+            />
+            <label for="folderHtml">
+              <span>HTML</span>
+            </label>
+
+            <input
+              type="radio"
+              name="folder"
+              name="folder"
+              id="folderCss"
+              value="1"
+              class="folder-type-radio"
+            />
+            <label for="FolderCss">
+              <span>CSS</span>
+            </label>
+
+            <input
+              type="radio"
+              name="folder"
+              id="folderJavascript"
+              value="2"
+              class="folder-type-radio"
+            />
+            <label for="folderJavascript">
+              <span>JavaScript</span>
+            </label>
+
+            <input
+              type="radio"
+              name="folder"
+              id="folderReact"
+              value="3"
+              class="folder-type-radio"
+            />
+            <label for="folderReact">
+              <span>React</span>
+            </label>
+
+            <input
+              type="radio"
+              name="folder"
+              id="folderSql"
+              value="4"
+              class="folder-type-radio"
+            />
+            <label for="folderSql">
+              <span>SQL</span>
+            </label>
+          </section>
+
+          <section class="button-section">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </section>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
