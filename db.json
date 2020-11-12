@@ -1,0 +1,133 @@
+{
+    folders: [
+      {
+        id: 1,
+        name: "HTML",
+      },
+      {
+        id: 2,
+        name: "CSS",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+      },
+      {
+        id: 4,
+        name: "React",
+      },
+      {
+        id: 5,
+        name: "SQL",
+      },
+      {
+        id: 6,
+        name: "Postgress",
+      },
+    ],
+    notes: [
+      {
+        id: 1,
+        name: "Base HTML Start",
+        modified: "2019-01-03T00:00:00.000Z",
+        folderId: 1,
+        content:
+          ' <!DOCTYPE html>
+             <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                </head>
+                <body>
+                </body>
+            </html>',
+      },
+      {
+        id: 2,
+        name: "Tags, Classes, and ID's",
+        modified: "2018-08-15T23:00:00.000Z",
+        folderId: 2,
+        content:
+            "Classes are created to apply to multiple elements, use a .”name” to create classes of style
+            If it is more unique, create an ID Name instead using a #”name”
+            IDs > Classes > tags
+            Use ID’s sparingly.
+            Chaining Selectors
+              things with all chained instances will be modified
+              h1.destination{
+              }
+            Nested elements are selected with tag, class, or id space nested element
+            for a list, the nested element is li.  to access:
+            .mainlist li {
+             }
+            Multiple selectors: Put a “,” between the different selectors (h1, .description, #testing) then write the code.  Do this to make it more concise.",
+      },
+      {
+        id: 3,
+        name: "Normalize CSS",
+        modified: "2018-03-01T00:00:00.000Z",
+        folderId: 2,
+        content:
+          "ADD THIS TO HEAD OF HTML NORMALIZE CSS
+          <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            rel="stylesheet"
+            type="text/css"
+            />",
+      },
+      {
+        id: 4,
+        name: "Border Box",
+        modified: "2019-01-04T00:00:00.000Z",
+        folderId: 2,
+        content:
+          "ADD TO ALL STYLESHEETS
+            * {
+              box-sizing: border-box;
+            }",
+      },
+      {
+        id: 5,
+        name: "Switch Statements",
+        modified: "2018-07-12T23:00:00.000Z",
+        folderId: 3,
+        content:
+          "Syntax:
+            switch (expression) {
+              case value1:
+                //Statements executed when the
+                //result of expression matches value1
+                [break;]
+              case value2:
+                //Statements executed when the
+                //result of expression matches value2
+                [break;]
+              ...
+              case valueN:
+                //Statements executed when the
+                //result of expression matches valueN
+                [break;]
+             [default:
+                //Statements executed when none of
+                //the values match the value of the expression
+                [break;]]
+             }
+             
+         Example -
+          const expr = 'Papayas';
+          switch (expr) {
+            case 'Oranges':
+              console.log('Oranges are $0.59 a pound.');
+              break;
+          case 'Mangoes':
+          case 'Papayas':
+            console.log('Mangoes and papayas are $2.79 a pound.');
+            // expected output: "Mangoes and papayas are $2.79 a pound."
+            break;
+          default:
+            console.log(`Sorry, we are out of ${expr}.`);
+          }",
+      },
+    ],
+  }
